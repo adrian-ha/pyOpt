@@ -207,7 +207,7 @@ class EqOption(object):
         Measures nominal volume in absolute terms of the underlying that is equivalent to option's gamma sensitivity.
         :return: -
         """
-        return self.spot * self.gamma()
+        return self.spot * self._gamma()
 
     def _vanna(self):
         """
